@@ -1,5 +1,7 @@
 <p>hello</p>
 
+<%= link_to "create new product"  %><br>
+
 <% @products.each do |product| %>
 <%= link_to product.name, product_path(product.id) %>
 <% end %>
