@@ -1,6 +1,6 @@
-<p>hello</p>
+<h1>Welcome to Rainforest</h1>
 
-<%= link_to "create new product"  %><br>
+<%= link_to "create new product", new_product_path %><br>
 
 <% @products.each do |product| %>
 <%= link_to product.name, product_path(product.id) %>

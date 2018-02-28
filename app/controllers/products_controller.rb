@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
     @product = Product.create
       @product.name = params[:product][:name]
       @product.description = params[:product][:description]
-      @product.price = params[:product][:price]
+      @product.price_in_cents = params[:product][:price_in_cents]
         if @product.save
           redirect_to products_path
         else
